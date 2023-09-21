@@ -1,0 +1,105 @@
+html {
+  background-color :navy;
+  background-image: url("black-twill.png");
+  min-height: 500px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  color:black;
+  padding: 12px;
+}
+h4{
+  color:#f1f1f1;
+}
+
+.box {
+  max-width: 400px;
+  margin: 50px auto;
+  background:cornflowerblue;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px -20px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+  background-color:green;
+  text-align: center;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color:green;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #000000;
+}
+
+
+form:item {
+  text-align: center;
+  margin-left: 20px;
+}
+
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color:green;
+  color: black;
+  font-size: 30px;
+  padding: 6px;
+  border-width: 0;
+}
+button:hover{
+  background-color: darkgreen;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 green;
+}
+
+::placeholder {
+  color:navy;
+  font-size : 23px;
+  opacity: 2;
+}
+
+footer {
+  color: white;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}

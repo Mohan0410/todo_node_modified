@@ -1,5 +1,5 @@
 //jshint esversion:6
-
+const cors = require("cors");
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
@@ -11,6 +11,7 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+app.use(cors());
 console.log(process.env.MONGODB_PASSWORD);
 mongoose.set('strictQuery', true);
 const uri = `mongodb+srv://mohanshankarmummana:${process.env.MONGODB_PASSWORD}@cluster0.tophk4r.mongodb.net/?retryWrites=true&w=majority`;
@@ -142,6 +143,7 @@ app.post("/delete",function(req,res){
 })
 
 
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
