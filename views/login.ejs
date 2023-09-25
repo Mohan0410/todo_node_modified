@@ -1,0 +1,21 @@
+<%- include("header") -%>
+
+
+    <div class="box" id="heading">
+        <h1>Register/Login</h1>
+    </div>
+
+    <div class="box">
+        <form action="/login" method="post">
+            
+            <input class="item" type="text" name="userName" placeholder="Please Enter Your Name" autocomplete="off">
+            <div class="item">
+                <input  type="password" name="password" placeholder="<%= psph %>" autocomplete="off">
+                <button  type="submit" name="login" >✓</button>
+               
+            </div>
+        </form>
+    </div>
+    </body>
+    <footer> <h4> &copy;All rights reserved </h4> </footer>
+</html>
